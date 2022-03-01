@@ -1,0 +1,26 @@
+{
+  "name": "discord-info",
+  "version": "0.0.1",
+  "description": "Get Guild & User Info With This Module",
+  "main": "./src/main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hadiazt/discord-info.git"
+  },
+  "keywords": [
+    "discord",
+    "info",
+    "guild",
+    "user",
+    "data"
+  ],
+  "author": "hadi.az",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/hadiazt/discord-info/issues"
+  },
+  "homepage": "https://github.com/hadiazt/discord-info#readme"
+}
