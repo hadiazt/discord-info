@@ -22,5 +22,8 @@
   "bugs": {
     "url": "https://github.com/hadiazt/discord-info/issues"
   },
-  "homepage": "https://github.com/hadiazt/discord-info#readme"
+  "homepage": "https://github.com/hadiazt/discord-info#readme",
+  "dependencies": {
+    "axios":"^0.26.0"
+  }
 }
