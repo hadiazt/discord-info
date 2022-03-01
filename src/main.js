@@ -24,6 +24,13 @@ exports.GUILD = ({ url }) => {
                     presenceCount: req.guild.approximate_presence_count,
                     description: req.guild.description,
                     splash: Guild.SPLASH + req.guild.id + '/' + req.guild.splash + '.png?size=2048',
+                    banner: {
+                        png: Guild.BANNER + req.guild.id + '/' + req.guild.banner + '.png?size=2048',
+                        jpg: Guild.BANNER + req.guild.id + '/' + req.guild.banner + '.jpg?size=2048',
+                        jpeg: Guild.BANNER + req.guild.id + '/' + req.guild.banner + '.jpeg?size=2048',
+                        webp: Guild.BANNER + req.guild.id + '/' + req.guild.banner + '.webp?size=2048',
+                        gif: Guild.BANNER + req.guild.id + '/' + req.guild.banner + '.gif?size=2048',
+                    },
                 }
             })
         }).catch(reject);
