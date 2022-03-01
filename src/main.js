@@ -31,6 +31,13 @@ exports.GUILD = ({ url }) => {
                         webp: Guild.BANNER + req.guild.id + '/' + req.guild.banner + '.webp?size=2048',
                         gif: Guild.BANNER + req.guild.id + '/' + req.guild.banner + '.gif?size=2048',
                     },
+                    icon: {
+                        png: Guild.ICON + req.guild.id + '/' + req.guild.icon + '.png?size=2048',
+                        jpg: Guild.ICON + req.guild.id + '/' + req.guild.icon + '.jpg?size=2048',
+                        jpeg: Guild.ICON + req.guild.id + '/' + req.guild.icon + '.jpeg?size=2048',
+                        webp: Guild.ICON + req.guild.id + '/' + req.guild.icon + '.webp?size=2048',
+                        gif: Guild.ICON + req.guild.id + '/' + req.guild.icon + '.gif?size=2048',
+                    },
                 }
             })
         }).catch(reject);
