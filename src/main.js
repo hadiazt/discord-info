@@ -45,6 +45,7 @@ exports.GUILD = ({ url }) => {
                         NSFW: req.guild.nsfw,
                         NSFWlvl: req.guild.nsfw_level
                     },
+                    features: req.guild.features
                 }
             })
         }).catch(reject);
