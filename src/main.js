@@ -41,6 +41,10 @@ exports.GUILD = ({ url }) => {
                     verificationLVL: req.guild.verification_level,
                     vanityURL: req.guild.vanity_url_code,
                     boostCount: req.guild.premium_subscription_count,
+                    nsfw: {
+                        NSFW: req.guild.nsfw,
+                        NSFWlvl: req.guild.nsfw_level
+                    },
                 }
             })
         }).catch(reject);
