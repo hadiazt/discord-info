@@ -38,6 +38,9 @@ exports.GUILD = ({ url }) => {
                         webp: Guild.ICON + req.guild.id + '/' + req.guild.icon + '.webp?size=2048',
                         gif: Guild.ICON + req.guild.id + '/' + req.guild.icon + '.gif?size=2048',
                     },
+                    verificationLVL: req.guild.verification_level,
+                    vanityURL: req.guild.vanity_url_code,
+                    boostCount: req.guild.premium_subscription_count,
                 }
             })
         }).catch(reject);
