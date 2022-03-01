@@ -17,6 +17,13 @@ exports.GUILD = ({ url }) => {
                     invType: req.type,
                     invExpireTime: req.expires_at
                 },
+                guild: {
+                    id: req.guild.id,
+                    name: req.guild.name,
+                    memberCount: req.guild.approximate_member_count,
+                    presenceCount: req.guild.approximate_presence_count,
+                    description: req.guild.description,
+                }
             })
         }).catch(reject);
     });
