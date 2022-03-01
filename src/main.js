@@ -10,7 +10,7 @@ exports.GUILD = ({ url }) => {
 
     return new Promise((resolve, reject) => {
         axios(config).then(data => {
-            resolve(data)
+            const req = data.data;
         }).catch(reject);
     });
 
