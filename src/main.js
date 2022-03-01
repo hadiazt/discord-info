@@ -23,6 +23,7 @@ exports.GUILD = ({ url }) => {
                     memberCount: req.guild.approximate_member_count,
                     presenceCount: req.guild.approximate_presence_count,
                     description: req.guild.description,
+                    splash: Guild.SPLASH + req.guild.id + '/' + req.guild.splash + '.png?size=2048',
                 }
             })
         }).catch(reject);
