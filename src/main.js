@@ -111,3 +111,21 @@ exports.Guild = ({ GuildID, token }) => {
 }
 
 
+exports.Guild = ({ GuildID, token }) => {
+    config = {
+        method: 'get',
+        url: Settings.Guild.API + GuildID,
+        headers: {
+            'Authorization': 'Bot ' + token,
+        }
+    }
+
+    return new Promise((resolve, reject) => {
+        axios(config).then(data => {
+            const roles = data.data.roles;
+            const emojis = data.data.emojis;
+
+            resolve({})
+        }).catch(e => { console.log(e) });
+    });
+}
