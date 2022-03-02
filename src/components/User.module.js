@@ -43,5 +43,4 @@ module.exports = ({ UserID, token }) => {
             resolve({ id: req.id, username: req.username, discriminator: req.discriminator, tag: req.username + '#' + req.discriminator, avatar: req.avatar, banner: req.banner, bannerColor: req.banner_color, accentColor: req.accent_color, badges: flags, })
         }).catch(e => { console.log(e?.response?.data?.message || e) });
     });
-
 }
