@@ -124,7 +124,7 @@ exports.GuildRoles = ({ GuildID, token }) => {
         axios(config).then(data => {
             const roles = data.data.roles;
             resolve(roles)
-        }).catch(e => { console.log(e) });
+        }).catch(e => { console.log(e.response.data.message || e) });
     });
 }
 
