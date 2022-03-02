@@ -1,12 +1,12 @@
 const axios = require('axios');
 const { Settings } = require('../config');
 
-module.exports = ({ GuildID, token }) => {
+module.exports = ({ GuildID, BotToken }) => {
     config = {
         method: 'get',
         url: Settings.Guild.API + GuildID,
         headers: {
-            'Authorization': 'Bot ' + token,
+            'Authorization': 'Bot ' + BotToken,
         }
     }
 
