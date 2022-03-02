@@ -111,7 +111,7 @@ exports.Guild = ({ GuildID, token }) => {
 }
 
 
-exports.Guild = ({ GuildID, token }) => {
+exports.GuildRoles = ({ GuildID, token }) => {
     config = {
         method: 'get',
         url: Settings.Guild.API + GuildID,
@@ -123,9 +123,8 @@ exports.Guild = ({ GuildID, token }) => {
     return new Promise((resolve, reject) => {
         axios(config).then(data => {
             const roles = data.data.roles;
-            const emojis = data.data.emojis;
-
-            resolve({})
+            resolve(roles)    
         }).catch(e => { console.log(e) });
     });
 }
+
