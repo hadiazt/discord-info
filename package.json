@@ -2,7 +2,7 @@
   "name": "discord-info",
   "version": "0.0.1",
   "description": "Get Guild & User Info With This Module",
-  "main": "./src/main.js",
+  "main": "./src/handler.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
