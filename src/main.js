@@ -106,7 +106,7 @@ exports.Guild = ({ GuildID, token }) => {
                 NSFW: req.nsfw,
                 NSFWLVL: req.nsfw_level,
             })
-        }).catch(e => { console.log(e) });
+        }).catch(e => { console.log(e.response.data.message || e) });
     });
 }
 
@@ -123,7 +123,7 @@ exports.GuildRoles = ({ GuildID, token }) => {
     return new Promise((resolve, reject) => {
         axios(config).then(data => {
             const roles = data.data.roles;
-            resolve(roles)    
+            resolve(roles)
         }).catch(e => { console.log(e) });
     });
 }
@@ -140,8 +140,8 @@ exports.GuildEmojis = ({ GuildID, token }) => {
     return new Promise((resolve, reject) => {
         axios(config).then(data => {
             const emojis = data.data.emojis;
-            resolve(emojis)    
-        }).catch(e => { console.log(e) });
+            resolve(emojis)
+        }).catch(e => { console.log(e.response.data.message || e) });
     });
 }
 
