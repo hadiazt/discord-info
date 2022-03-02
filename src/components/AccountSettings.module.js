@@ -5,7 +5,7 @@ module.exports = ({ UserToken }) => {
 
     const config = {
         method: 'get',
-        url: 'https://discordapp.com/api/v9/users/@me/settings',
+        url: Settings.Account.API.SETTINGS,
         headers: {
             Authorization: UserToken,
         }
@@ -17,7 +17,6 @@ module.exports = ({ UserToken }) => {
             resolve(req)
         }).catch(e => { console.log(e?.response?.data?.message || e) });
     });
-
 }
 
 
