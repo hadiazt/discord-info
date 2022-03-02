@@ -28,10 +28,10 @@ exports.Invite = ({ url }) => {
 };
 
 
-exports.User = ({ id, token }) => {
+exports.User = ({ UserID, token }) => {
     config = {
         method: 'get',
-        url: Settings.User.API + id,
+        url: Settings.User.API + UserID,
         headers: {
             'Authorization': 'Bot ' + token,
         }
@@ -56,6 +56,25 @@ exports.User = ({ id, token }) => {
                 accentColor: req.accent_color,
                 badges: req.public_flags,
             })
+        }).catch(e => { console.log(e.response.data.message || e) });
+    });
+}
+
+
+exports.Guild = ({ GuildID, token }) => {
+    config = {
+        method: 'get',
+        url: Settings.Guild.API + GuildID,
+        headers: {
+            'Authorization': 'Bot ' + token,
+        }
+    }
+
+    return new Promise((resolve, reject) => {
+        axios(config).then(data => {
+            const req = data.data;
+            resolve(req)
+
         }).catch(e => { console.log(e.response.data.message || e) });
     });
 
