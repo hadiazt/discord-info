@@ -140,6 +140,7 @@ exports.GuildEmojis = ({ GuildID, token }) => {
     return new Promise((resolve, reject) => {
         axios(config).then(data => {
             const emojis = data.data.emojis;
+            resolve(emojis)    
         }).catch(e => { console.log(e) });
     });
 }
