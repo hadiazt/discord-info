@@ -98,6 +98,8 @@ exports.Guild = ({ GuildID, token }) => {
                 boostLVL: req.premium_tier,
                 boostCount: req.premium_subscription_count,
                 systemChannelFlags: req.system_channel_flags,
+                preferredLocale: req.preferred_locale,
+                rulesChannelID: req.rules_channel_id,
 
             })
         }).catch(e => { console.log(e) });
