@@ -78,6 +78,11 @@ exports.Guild = ({ GuildID, token }) => {
                 discoverySplash: req.discovery_splash,
                 icon: req.icon,
                 banner: req.banner,
+                applicationID: req.application_id,
+                region: req.region,
+                afkChannelID: req.afk_channel_id,
+                afkTimeout: req.afk_timeout,
+
             })
         }).catch(e => { console.log(e) });
     });
