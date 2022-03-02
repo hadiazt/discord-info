@@ -21,6 +21,6 @@ module.exports = ({ url }) => {
                 guild: { id: req.guild.id, name: req.guild.name, memberCount: req.approximate_member_count, presenceCount: req.approximate_presence_count, description: req.guild.description, splash: req.guild.splash, banner: req.guild.banner, icon: req.guild.icon, verificationLVL: req.guild.verification_level, vanityURL: req.guild.vanity_url_code, boostCount: req.guild.premium_subscription_count, nsfw: { NSFW: req.guild.nsfw, NSFWlvl: req.guild.nsfw_level }, wlcScreen: req.guild.welcome_screen, features: req.guild.features }
             })
 
-  }).catch(e => { console.log(e?.response?.data?.message || e) });
+        }).catch(e => { console.log(e?.response?.data?.message || e) });
     });
 };
