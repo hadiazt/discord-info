@@ -73,6 +73,11 @@ exports.Guild = ({ GuildID, token }) => {
                 id: req.id,
                 name: req.name,
                 ownerID: req.owner_id,
+                description: req.description,
+                splash: req.splash,
+                discoverySplash: req.discovery_splash,
+                icon: req.icon,
+                banner: req.banner,
             })
         }).catch(e => { console.log(e) });
     });
