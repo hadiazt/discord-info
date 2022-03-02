@@ -42,19 +42,10 @@ exports.User = ({ UserID, token }) => {
             const req = data.data;
 
             if (req.avatar !== null) req.avatar = { png: Settings.User.AVATAR + req.id + '/' + req.avatar + '.png?size=2048', jpg: Settings.User.AVATAR + req.id + '/' + req.avatar + '.jpg?size=2048', jpeg: Settings.User.AVATAR + req.id + '/' + req.avatar + '.jpeg?size=2048', webp: Settings.User.AVATAR + req.id + '/' + req.avatar + '.webp?size=2048', gif: Settings.User.AVATAR + req.id + '/' + req.avatar + '.gif?size=2048', }; else req.avatar = null
-
             if (req.banner !== null) req.banner = { png: Settings.User.BANNER + req.id + '/' + req.banner + '.png?size=2048', jpg: Settings.User.BANNER + req.id + '/' + req.banner + '.jpg?size=2048', jpeg: Settings.User.BANNER + req.id + '/' + req.banner + '.jpeg?size=2048', webp: Settings.User.BANNER + req.id + '/' + req.banner + '.webp?size=2048', gif: Settings.User.BANNER + req.id + '/' + req.banner + '.gif?size=2048', }; else req.banner = null
 
             resolve({
-                id: req.id,
-                username: req.username,
-                discriminator: req.discriminator,
-                tag: req.username + '#' + req.discriminator,
-                avatar: req.avatar,
-                banner: req.banner,
-                bannerColor: req.banner_color,
-                accentColor: req.accent_color,
-                badges: req.public_flags,
+                id: req.id, username: req.username, discriminator: req.discriminator, tag: req.username + '#' + req.discriminator, avatar: req.avatar, banner: req.banner, bannerColor: req.banner_color, accentColor: req.accent_color, badges: req.public_flags,
             })
         }).catch(e => { console.log(e.response.data.message || e) });
     });
@@ -73,9 +64,48 @@ exports.Guild = ({ GuildID, token }) => {
     return new Promise((resolve, reject) => {
         axios(config).then(data => {
             const req = data.data;
-            resolve(req)
 
-        }).catch(e => { console.log(e.response.data.message || e) });
+
+            resolve({
+                id: req.id,
+                name: req.name,
+                ownerID: req.owner_id,
+                description: req.description,
+                splash: req.splash,
+                discoverySplash: req.discovery_splash,
+                icon: req.icon,
+                banner: req.banner,
+                applicationID: req.application_id,
+                region: req.region,
+                afkChannelID: req.afk_channel_id,
+                afkTimeout: req.afk_timeout,
+                systemChannelID: req.system_channel_id,
+                widgetEnabled: req.widget_enabled,
+                widgetChannelID: req.widget_channel_id,
+                verificationLVL: req.verification_level,
+                features: req.features,
+                stickers: req.stickers,
+                defaultMSGNotifications: req.default_message_notifications,
+                mfaLVL: req.mfa_level,
+                explicitContentFilter: req.explicit_content_filter,
+                maxPresences: req.max_presences,
+                maxMembers: req.max_members,
+                maxVideoUsers: req.max_video_channel_users,
+                vanityURL: req.vanity_url_code,
+                boostLVL: req.premium_tier,
+                boostCount: req.premium_subscription_count,
+                systemChannelFlags: req.system_channel_flags,
+                preferredLocale: req.preferred_locale,
+                rulesChannelID: req.rules_channel_id,
+                publicUpdatesChannelID: req.public_updates_channel_id,
+                hubType: req.hub_type,
+                premiumProgressBarEnabled: req.premium_progress_bar_enabled,
+                NSFW: req.nsfw,
+                NSFWLVL: req.nsfw_level,
+            })
+        }).catch(e => { console.log(e) });
     });
 
 }
+
+
