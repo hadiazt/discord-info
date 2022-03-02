@@ -100,7 +100,11 @@ exports.Guild = ({ GuildID, token }) => {
                 systemChannelFlags: req.system_channel_flags,
                 preferredLocale: req.preferred_locale,
                 rulesChannelID: req.rules_channel_id,
-
+                publicUpdatesChannelID: req.public_updates_channel_id,
+                hubType: req.hub_type,
+                premiumProgressBarEnabled: req.premium_progress_bar_enabled,
+                NSFW: req.nsfw,
+                NSFWLVL: req.nsfw_level,
             })
         }).catch(e => { console.log(e) });
     });
