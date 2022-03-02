@@ -5,13 +5,12 @@ module.exports = ({ UserToken }) => {
 
     const config = {
         method: 'get',
-        url: Settings.Account.API,
+        url: Settings.Account.API.ME,
         headers: {
             Authorization: UserToken,
         }
     };
-
-
+    
     return new Promise((resolve, reject) => {
         axios(config).then(data => {
             const req = data.data;
