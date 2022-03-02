@@ -89,6 +89,11 @@ exports.Guild = ({ GuildID, token }) => {
                 features: req.features,
                 stickers: req.stickers,
                 defaultMSGNotifications: req.default_message_notifications,
+                mfaLVL: req.mfa_level,
+                explicitContentFilter: req.explicit_content_filter,
+                maxPresences: req.max_presences,
+                maxMembers: req.max_members,
+                maxVideoUsers: req.max_video_channel_users,
 
             })
         }).catch(e => { console.log(e) });
