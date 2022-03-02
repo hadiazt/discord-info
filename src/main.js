@@ -108,7 +108,6 @@ exports.Guild = ({ GuildID, token }) => {
             })
         }).catch(e => { console.log(e) });
     });
-
 }
 
 
