@@ -82,6 +82,13 @@ exports.Guild = ({ GuildID, token }) => {
                 region: req.region,
                 afkChannelID: req.afk_channel_id,
                 afkTimeout: req.afk_timeout,
+                systemChannelID: req.system_channel_id,
+                widgetEnabled: req.widget_enabled,
+                widgetChannelID: req.widget_channel_id,
+                verificationLVL: req.verification_level,
+                features: req.features,
+                stickers: req.stickers,
+                defaultMSGNotifications: req.default_message_notifications,
 
             })
         }).catch(e => { console.log(e) });
