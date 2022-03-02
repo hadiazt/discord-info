@@ -1,12 +1,12 @@
 const axios = require('axios');
 const { Settings } = require('../config');
 
-module.exports = ({ UserID, token }) => {
+module.exports = ({ UserID, BotToken }) => {
     config = {
         method: 'get',
         url: Settings.User.API + UserID,
         headers: {
-            'Authorization': 'Bot ' + token,
+            'Authorization': 'Bot ' + BotToken,
         }
     }
 
