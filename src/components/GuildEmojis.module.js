@@ -14,6 +14,6 @@ module.exports = ({ GuildID, token }) => {
         axios(config).then(data => {
             const emojis = data.data.emojis;
             resolve(emojis)
-  }).catch(e => { console.log(e?.response?.data?.message || e) });
+        }).catch(e => { console.log(e?.response?.data?.message || e) });
     });
 }
