@@ -20,7 +20,6 @@ exports.Settings = {
             ME: "https://discordapp.com/api/v9/users/@me",
             GUILDS: "https://discordapp.com/api/v9/users/@me/guilds",
             APPS: "https://discordapp.com/api/v9/users/@me/applications",
-            CONNECTIONS: "https://discord.com/api/v9/connections",
             SETTINGS: "https://discordapp.com/api/v9/users/@me/settings"
         },
         AVATAR: "https://cdn.discordapp.com/avatars/",
