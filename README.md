@@ -54,9 +54,9 @@ Or Visit [test](https://github.com/hadiazt/discord-info/blob/main/index.test.js)
 </br>
 
 <p align="center">
-    <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/hadiazt/discord-radio">
+    <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/hadiazt/discord-info">
     &nbsp;
-    <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/hadiazt/discord-radio">
+    <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/hadiazt/discord-info">
     &nbsp;
     <img alt="License" src="https://img.shields.io/badge/license-MIT-brightgreen">
     &nbsp;
@@ -70,16 +70,16 @@ Or Visit [test](https://github.com/hadiazt/discord-info/blob/main/index.test.js)
 ## 📊 Repo Stats
 
 <p align="left">
-    <img src="https://img.shields.io/github/forks/hadiazt/discord-radio.svg" alt="forks">
-    <img src="https://img.shields.io/github/stars/hadiazt/discord-radio.svg" alt="stars">
-    <img src="https://img.shields.io/github/watchers/hadiazt/discord-radio.svg" alt="watchers">
+    <img src="https://img.shields.io/github/forks/hadiazt/discord-info.svg" alt="forks">
+    <img src="https://img.shields.io/github/stars/hadiazt/discord-info.svg" alt="stars">
+    <img src="https://img.shields.io/github/watchers/hadiazt/discord-info.svg" alt="watchers">
 </p>
 
 <br/>
 
 ## 🤝 Contributing
-1. [Fork the repository](https://github.com/hadiazt/discord-radio/fork)
-2. Clone your fork: `git clone https://github.com/your-username/discord-radio.git`
+1. [Fork the repository](https://github.com/hadiazt/discord-info/fork)
+2. Clone your fork: `git clone https://github.com/your-username/discord-info.git`
 3. Create your feature branch: `git checkout -b my-new-feature`
 4. Commit your changes: `git commit -am 'Add some feature'`
 5. Push to the branch: `git push origin my-new-feature`
