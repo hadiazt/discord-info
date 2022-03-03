@@ -19,15 +19,19 @@ Discord Info
 </br>
 
 ```
-GuildID : 
+url : The Server Invite Code (Just The Code)
 
 ```
 ```
-BotToken :
+GuildID : The Server ID
 
 ```
 ```
-UserToken : 
+BotToken : Token Of Bot
+
+```
+```
+UserToken : Account Token
 ```
 
 ## Example Of Usage :
